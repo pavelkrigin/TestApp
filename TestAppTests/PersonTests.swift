@@ -20,17 +20,32 @@ final class PersonTests: XCTestCase {
     }
 
     override func tearDown() {
+        person = nil //выгрузка из памяти экз класса
+        super.tearDown()
     }
 
     func testInitInstancePersonWithNameAndPhone() {
-        let person = Person(name: "Foo", surname: "Bar", phone: "Baz")
+//        let person = Person(name: "Foo", surname: "Bar", phone: "Baz")
         XCTAssertEqual(person.name, "Foo")
-        XCTAssertEqual(person.phone, "Bar")
+        XCTAssertEqual(person.phone, "Baz ")
     }
     
     func testInitInstancePersonWithFullNameAndPhone() {
-        let person = Person(name: "Foo", surname: "Bar", phone: "Baz")
+//        let person = Person(name: "Foo", surname: "Bar", phone: "Baz")
         XCTAssertEqual(person.surname, "Bar")
 
+    }
+    
+    //возможность присваивания изображения
+    func testInitInstancePersonWithImage() {
+        let image = UIImage(systemName: "person.circle")
+        let imageData = image?.pngData()
+        let person = Person(
+            name: "Foo",
+            surname: "Bar",
+            phone: "Baz",
+            imageData: imageData
+        )
+        XCTAssertNotNil(person.imageData)
     }
 }
