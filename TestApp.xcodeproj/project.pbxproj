@@ -13,7 +13,21 @@
 		CA27436D293B9C4500F485C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA27436B293B9C4500F485C0 /* Main.storyboard */; };
 		CA27436F293B9C4900F485C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA27436E293B9C4900F485C0 /* Assets.xcassets */; };
 		CA274372293B9C4900F485C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA274370293B9C4900F485C0 /* LaunchScreen.storyboard */; };
+		CA27437A293B9D4500F485C0 /* SoundBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA274379293B9D4500F485C0 /* SoundBar.swift */; };
+		CA274382293B9F0200F485C0 /* SoundBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA274381293B9F0200F485C0 /* SoundBarTests.swift */; };
+		CA274389294CD08400F485C0 /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA274388294CD08400F485C0 /* PersonTests.swift */; };
+		CA27438B294CD99900F485C0 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA27438A294CD99900F485C0 /* Person.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CA274383293B9F0200F485C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA27435A293B9C4500F485C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA274361293B9C4500F485C0;
+			remoteInfo = TestApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		CA274362293B9C4500F485C0 /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +38,22 @@
 		CA27436E293B9C4900F485C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA274371293B9C4900F485C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA274373293B9C4900F485C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA274379293B9D4500F485C0 /* SoundBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundBar.swift; sourceTree = "<group>"; };
+		CA27437F293B9F0200F485C0 /* TestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA274381293B9F0200F485C0 /* SoundBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundBarTests.swift; sourceTree = "<group>"; };
+		CA274388294CD08400F485C0 /* PersonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
+		CA27438A294CD99900F485C0 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CA27435F293B9C4500F485C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA27437C293B9F0200F485C0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				CA274364293B9C4500F485C0 /* TestApp */,
+				CA274380293B9F0200F485C0 /* TestAppTests */,
 				CA274363293B9C4500F485C0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				CA274362293B9C4500F485C0 /* TestApp.app */,
+				CA27437F293B9F0200F485C0 /* TestAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,12 +87,23 @@
 				CA274365293B9C4500F485C0 /* AppDelegate.swift */,
 				CA274367293B9C4500F485C0 /* SceneDelegate.swift */,
 				CA274369293B9C4500F485C0 /* ViewController.swift */,
+				CA274379293B9D4500F485C0 /* SoundBar.swift */,
+				CA27438A294CD99900F485C0 /* Person.swift */,
 				CA27436B293B9C4500F485C0 /* Main.storyboard */,
 				CA27436E293B9C4900F485C0 /* Assets.xcassets */,
 				CA274370293B9C4900F485C0 /* LaunchScreen.storyboard */,
 				CA274373293B9C4900F485C0 /* Info.plist */,
 			);
 			path = TestApp;
+			sourceTree = "<group>";
+		};
+		CA274380293B9F0200F485C0 /* TestAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA274381293B9F0200F485C0 /* SoundBarTests.swift */,
+				CA274388294CD08400F485C0 /* PersonTests.swift */,
+			);
+			path = TestAppTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +126,24 @@
 			productReference = CA274362293B9C4500F485C0 /* TestApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		CA27437E293B9F0200F485C0 /* TestAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA274385293B9F0200F485C0 /* Build configuration list for PBXNativeTarget "TestAppTests" */;
+			buildPhases = (
+				CA27437B293B9F0200F485C0 /* Sources */,
+				CA27437C293B9F0200F485C0 /* Frameworks */,
+				CA27437D293B9F0200F485C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA274384293B9F0200F485C0 /* PBXTargetDependency */,
+			);
+			name = TestAppTests;
+			productName = TestAppTests;
+			productReference = CA27437F293B9F0200F485C0 /* TestAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +156,10 @@
 				TargetAttributes = {
 					CA274361293B9C4500F485C0 = {
 						CreatedOnToolsVersion = 14.1;
+					};
+					CA27437E293B9F0200F485C0 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = CA274361293B9C4500F485C0;
 					};
 				};
 			};
@@ -116,6 +177,7 @@
 			projectRoot = "";
 			targets = (
 				CA274361293B9C4500F485C0 /* TestApp */,
+				CA27437E293B9F0200F485C0 /* TestAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +193,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CA27437D293B9F0200F485C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -138,13 +207,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA27438B294CD99900F485C0 /* Person.swift in Sources */,
 				CA27436A293B9C4500F485C0 /* ViewController.swift in Sources */,
 				CA274366293B9C4500F485C0 /* AppDelegate.swift in Sources */,
 				CA274368293B9C4500F485C0 /* SceneDelegate.swift in Sources */,
+				CA27437A293B9D4500F485C0 /* SoundBar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA27437B293B9F0200F485C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA274389294CD08400F485C0 /* PersonTests.swift in Sources */,
+				CA274382293B9F0200F485C0 /* SoundBarTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA274384293B9F0200F485C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA274361293B9C4500F485C0 /* TestApp */;
+			targetProxy = CA274383293B9F0200F485C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CA27436B293B9C4500F485C0 /* Main.storyboard */ = {
@@ -293,18 +381,21 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = wowboat.TestApp;
+				PRODUCT_BUNDLE_IDENTIFIER = PavelKrigin.TestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,18 +412,57 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = wowboat.TestApp;
+				PRODUCT_BUNDLE_IDENTIFIER = PavelKrigin.TestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		CA274386293B9F0200F485C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LKCXB3W5BN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wowboat.TestAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestApp";
+			};
+			name = Debug;
+		};
+		CA274387293B9F0200F485C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LKCXB3W5BN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wowboat.TestAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestApp";
 			};
 			name = Release;
 		};
@@ -353,6 +483,15 @@
 			buildConfigurations = (
 				CA274377293B9C4900F485C0 /* Debug */,
 				CA274378293B9C4900F485C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA274385293B9F0200F485C0 /* Build configuration list for PBXNativeTarget "TestAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA274386293B9F0200F485C0 /* Debug */,
+				CA274387293B9F0200F485C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
