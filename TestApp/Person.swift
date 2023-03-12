@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Person {
+final class Person {
     let name: String
     var surname: String? //опционал
     let phone: String
